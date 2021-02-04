@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { FixedSizeList } from 'react-window'
 import { ListItem } from '@material-ui/core'
 import { Rating } from '@material-ui/lab'
@@ -67,6 +68,11 @@ function VirtualizedList({ data, listHeight }) {
       </FixedSizeList>
     </div>
   )
+}
+
+VirtualizedList.propTypes = {
+  data: PropTypes.array,
+  listHeight: PropTypes.number
 }
 
 export default VirtualizedList
