@@ -19,7 +19,13 @@ import resultMap from './resultMap.png'
 
 import styles from './styles.module.scss'
 
-function SearchResult({ searchBarValue, setShowResult, testError = false }) {
+function SearchResult({
+  searchBarValue,
+  setShowResult,
+  testError = false,
+  setGoogleInput,
+  setError
+}) {
   const [isModalOpen, setIsModalOpen] = useState(false)
 
   const apiOptions = {
@@ -48,7 +54,11 @@ function SearchResult({ searchBarValue, setShowResult, testError = false }) {
             sm={2}
             xs={12}
             className={styles.googleLogo}
-            onClick={() => setShowResult(false)}
+            onClick={() => {
+              setShowResult(false)
+              setGoogleInput('')
+              setError(false)
+            }}
           >
             <img src={googleLogo} alt='google logo' />
           </Grid>

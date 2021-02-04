@@ -71,6 +71,8 @@ function GoogleHome() {
         <SearchResult
           searchBarValue={googleInput}
           setShowResult={setShowResult}
+          setGoogleInput={setGoogleInput}
+          setError={setError}
         />
       )}
     </>
