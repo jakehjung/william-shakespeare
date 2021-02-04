@@ -1,0 +1,76 @@
+.loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.topBar {
+  .googleLogo {
+    display: flex;
+    justify-items: flex-start;
+    cursor: pointer;
+    img {
+      width: 92px;
+    }
+  }
+
+  .searchBarWrapper {
+    justify-items: left;
+  }
+
+  .profilePic {
+    width: 42px;
+    border-radius: 50%;
+  }
+}
+
+.settingsList {
+  display: flex;
+  list-style: none;
+  padding: 0px;
+  color: #5f6368;
+  margin: 0px;
+  font-size: 13px;
+
+  li:first-child {
+    display: flex;
+    align-items: center;
+    color: #1a73e8;
+    border-bottom: 3px solid #1a73e8;
+  }
+  li {
+    svg {
+      padding-right: 6px;
+    }
+    display: flex;
+    align-items: center;
+    padding: 16px 12px 12px 10px;
+    border-bottom: 3px solid white;
+    cursor: pointer;
+  }
+}
+
+.searchResultCount {
+  color: #70757a;
+  line-height: 43px;
+  font-size: 14px;
+  display: flex;
+}
+
+.searchResult {
+  display: flex;
+  flex-direction: column;
+
+  img {
+    cursor: pointer;
+    width: 100%;
+    border-radius: 8px;
+  }
+}

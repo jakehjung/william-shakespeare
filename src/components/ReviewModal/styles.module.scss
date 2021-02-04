@@ -1,0 +1,83 @@
+.modal {
+  background-color: rgba(245, 245, 245, 0.85);
+}
+
+.modalBody {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 50px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 728px;
+  height: 75%;
+  min-height: 455px;
+  font-size: 13px;
+  white-space: normal;
+  border: 1px solid #dadce0;
+  box-shadow: 0 2px 4px #dadce0;
+  background-color: #fff;
+  overflow: hidden;
+
+  &:focus {
+    outline: 0;
+  }
+
+  .title {
+    color: #3c4043;
+    font-size: 28px;
+  }
+
+  .address {
+    color: #70757a;
+    font-size: 13px;
+  }
+
+  .reviewsContainer {
+    padding: 15px 0 17px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .stars {
+    display: flex;
+    align-items: center;
+  }
+
+  .avgReview {
+    font-family: arial, sans-serif;
+    font-size: 32px;
+    margin-right: 11px;
+    color: #70757a;
+  }
+
+  .reviewCount {
+    margin-left: 11px;
+    font-size: 15px;
+    color: #70757a;
+  }
+
+  .sort {
+    span {
+      font-weight: bold;
+      font-size: 12px;
+      color: #70757a;
+    }
+
+    .sortSelection {
+      color: #70757a;
+      cursor: pointer;
+      border: none;
+      margin-left: 5px;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  .reviewListContainer {
+    height: 100%;
+  }
+}

@@ -1,0 +1,4 @@
+module.exports = {
+  SHAKESPEARE_API_KEY: process.env.REACT_APP_SHAKESPEARE_API_KEY,
+  SHAKESPEARE_URL: process.env.REACT_APP_SHAKESPEARE_URL
+}

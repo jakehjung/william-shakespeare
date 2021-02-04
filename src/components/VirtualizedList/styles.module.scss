@@ -1,0 +1,28 @@
+.reviewContainer {
+  display: flex;
+
+  .avatar {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+  }
+
+  .rightCol {
+    margin-left: 47px;
+  }
+
+  .name {
+    font-size: 13px;
+    font-weight: bold;
+  }
+
+  .rating {
+    display: flex;
+    align-items: center;
+    margin-top: 6px;
+  }
+}

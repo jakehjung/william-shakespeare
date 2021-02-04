@@ -1,0 +1,32 @@
+.list {
+  border-top: 1px solid #ecedef;
+  .listItem {
+    border-bottom: 1px solid #ecedef;
+
+    .leftCol {
+      margin-right: 12px;
+      display: flex;
+      align-self: flex-start;
+      font-weight: bold;
+      color: #ea4335;
+    }
+    .midCol {
+      p {
+        color: rgba(0, 0, 0, 0.54);
+        font-size: 14px;
+        margin: 0px;
+        margin-bottom: 5px;
+      }
+
+      .title {
+        color: black;
+        font-size: 16px;
+      }
+
+      .avgReview {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}

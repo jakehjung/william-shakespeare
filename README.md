@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+# William Shakespeare Reviews
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Scripts
+- `yarn start`: to launch the local server http://localhost:3000/
+- `yarn test`: runs test suites
 
-In the project directory, you can run:
+## App Guide
+- Copy `.env.example` and set `REACT_APP_SHAKESPEARE_API_KEY`
 
-### `yarn start`
+```bash
+cp .env.example .env
+```
+- run `yarn` to install dependencies
+- run `yarn start` and go http://localhost:3000/
+- google search "William Shakespeare"
+- find "William Shakespeare" reviews! :)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Technologies/Libraries
+- `create-react-app` was used to bootstrap the react app for rapid dev.
+- `testing-library` was used for some dom, unit testing.
+- `material-ui` was used to for layouts, icons, and other various components. I've never used it before and I wanted to test it out. Definitely different than `bootstrap`.
+- `axios` was used to create a custom `useApi` hook just because I'm used to it. But now I think about it, `fetch` would have been just fine.
+- `ramda` was used to deep clone data. I don't think I used it anywhere else besides that. Recently got to know this library and it seems to promote functional programming.
+- `react-window` was used to efficiently render virtualized list since I didn't know how many rows the API was going to return, and pagination was not available.
+- `prop-types` was used for prop validation. Did not want to use `TypeScript` for this small project.
+- `scss.modules` was used to ensure independent css. I also like using `styled-components`.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## What I learned / Regrets / Final Words
+- I personally think it's difficult to write non-fragile front-end tests(especially for async custom hooks). I should have spent more time on writing those.
+- I learned that I don't know how to build a react application from scratch without using `create-react-app`. I spent quite a bit of time trying to set everything up from scratch, installing `babel` and `webpack` and configuring them. I ended up using `create-react-app` but now I think I leared enough to build it from scratch.
+- I regret spending too much time on the front-end design instead of spending more time on testing.
+- You will probably find some non-responsive components in the app. Blame my incompetence in `material-ui`.
+- Finally, thank you for taking time to review my app -- I know time is valuable for everyone. It was really fun building this application. I am looking forward to talking to you soon. Thanks.
