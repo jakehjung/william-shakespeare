@@ -28,7 +28,7 @@ cp .env.example .env
 - `scss.modules` was used to ensure independent css. I also like using `styled-components`.
 
 ## What I learned / Regrets / Final Words
-- I personally think it's difficult to write non-fragile front-end tests(especially for async custom hooks). I should have spent more time on writing those and implementing some snapshot testing.
+- I personally think it's difficult to write non-fragile front-end tests(especially for async custom hooks). I should have spent more time on writing those and implemented some snapshot testing.
 - I learned that I don't know how to build a react application from scratch without using `create-react-app`. I spent quite a bit of time trying to set everything up from scratch, installing `babel` and `webpack` and configuring them. I ended up using `create-react-app` but now I think I leared enough to build it from scratch.
 - I regret spending too much time on the front-end design instead of spending more time on testing. But I had a blast thinking through what user experience I want to build.
 - You will probably find some non-responsive components in the app. Blame my incompetence in `material-ui`.
